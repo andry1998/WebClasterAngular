@@ -1,7 +1,7 @@
 <div *ngIf="isSignedin">
   <div class="text-right">
     <p>Welcome back, {{ signedinUser }}!</p>
-    <button (click)="doSignout()" class="btn btn-info">Sign out</button>
+    <button (click)="doSignout()" class="btn btn-light">Sign out</button>
   </div>
   <p></p>
 
@@ -11,6 +11,12 @@
       <nav class="navbar navbar-expand-sm">
         <button (click)="createStudent()" class="btn btn-info">Add student</button>
       </nav>
+<!--      <select #cricket (change)="update($event)">-->
+<!--        <option value="default">&#45;&#45;&#45;&#45;</option>-->
+<!--        <option *ngFor="let player of groups" [value]="player">-->
+<!--          {{player}}-->
+<!--        </option>-->
+<!--      </select>-->
       <div class="card-body">
         <table class="table table-striped table-bordered table-hover">
           <thead>

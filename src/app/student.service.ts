@@ -36,6 +36,10 @@ export class StudentService {
     return this.http.get(`${this.baseUrl}/pwd`, {responseType: 'text'});
   }
 
+  getGroup(): Observable<String[]>{
+    return this.http.get(`${this.baseUrl}/groups`)
+  }
+
   getByAdminRole(): Observable<Student[]>{
     return this.http.get<Student[]>(`${this.baseUrl}/'admin'`);
   }

@@ -14,7 +14,7 @@ export class CreateStudentComponent implements OnInit {
 
   student: Student = new Student();
   constructor(private studentService: StudentService, private router: Router) { }
-  generatePass: String = null;
+  generatePass: string = null;
 
   ngOnInit(): void {
     this.studentService.getPassword().subscribe(data => {
@@ -24,6 +24,7 @@ export class CreateStudentComponent implements OnInit {
         this.student.password = this.generatePass;
       },
       error => console.log(error));
+
   }
 
   saveStudent() {

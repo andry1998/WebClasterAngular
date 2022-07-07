@@ -1,14 +1,14 @@
 <div id="signin-box">
-  <h2>Signin Here</h2>
+  <h2>Вход в систему</h2>
   <div style="color : red" *ngIf='error'>{{error}}</div>
   <form name='signinForm' (submit)="doSignin()">
     <table>
       <tr>
-        <td>Username:</td>
+        <td>Логин:</td>
         <td><input type='text' name='username' [(ngModel)]="username"></td>
       </tr>
       <tr>
-        <td>Password:</td>
+        <td>Пароль:</td>
         <td><input type='password' name='password' [(ngModel)]="password"/></td>
       </tr>
       <tr>

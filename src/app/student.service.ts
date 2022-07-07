@@ -32,13 +32,13 @@ export class StudentService {
     return this.http.delete(`${this.baseUrl}/${id}`);
   }
 
-  getPassword(): Observable<String>{
+  getPassword(): Observable<string>{
     return this.http.get(`${this.baseUrl}/pwd`, {responseType: 'text'});
   }
 
-  getGroup(): Observable<String[]>{
-    return this.http.get(`${this.baseUrl}/groups`)
-  }
+  // getGroup(): Observable<string[]>{
+  //   return this.http.get(`${this.baseUrl}/groups`)
+  // }
 
   getByAdminRole(): Observable<Student[]>{
     return this.http.get<Student[]>(`${this.baseUrl}/'admin'`);

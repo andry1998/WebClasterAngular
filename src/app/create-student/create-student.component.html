@@ -1,15 +1,15 @@
 <div class="col-md-8 offset-md-3">
-  <h3>Create Student</h3>
+  <h3>Добавить студента</h3>
   <form (ngSubmit)="onSubmit()">
 
     <div class="form-group">
-      <label>First name</label>
+      <label>Имя</label>
       <input type="text" class="form-control" id="first_name"
              [(ngModel)]="student.first_name" name="first_name">
     </div>
 
     <div class="form-group">
-      <label>Last name</label>
+      <label>Фамилия</label>
       <input type="text" class="form-control" id="last_name"
              [(ngModel)]="student.last_name" name="last_name">
     </div>
@@ -21,17 +21,17 @@
     </div>
 
     <div class="form-group">
-      <label>Password</label>
+      <label>Пароль</label>
       <input type="text" class="form-control" id="password"
              [(ngModel)]="student.password" name="password">
     </div>
 
     <div class="form-group">
-      <label>Study group</label>
+      <label>Учебная группа</label>
       <input type="text" class="form-control" id="study_group"
              [(ngModel)]="student.study_group" name="study_group">
     </div>
 
-    <button class="btn btn-success" type="submit">Submit</button>
+    <button class="btn btn-success" type="submit">Добавить</button>
   </form>
 </div>

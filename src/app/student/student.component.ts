@@ -16,7 +16,7 @@ export class StudentComponent implements OnInit {
 
   students: Student[];
 
-  groups: String[];
+  groups: string[];
   selected = "----";
 
   isSignedin = false;
@@ -26,12 +26,12 @@ export class StudentComponent implements OnInit {
   constructor(private studentService: StudentService, private router: Router, private http: HttpClient, private authService: AuthService) { }
 
   ngOnInit(): void {
-    this.studentService.getGroup().subscribe(data => {
-        console.log(data);
-        this.groups = data;
-        console.log(this.groups);
-      },
-      error => console.log(error));
+    // this.studentService.getGroup().subscribe(data => {
+    //     console.log(data);
+    //     this.groups = data;
+    //     console.log(this.groups);
+    //   },
+    //   error => console.log(error));
     this.isSignedin = this.authService.isUserSignedin();
     this.signedinUser = this.authService.getSignedinUser();
     this.getStudent();
